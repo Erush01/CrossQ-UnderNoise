@@ -1,0 +1,19 @@
+{
+  "status": "incomplete",
+  "task": "Hopper-v4",
+  "seed": 3,
+  "attempt": 1,
+  "last_completed_timestep": 75000,
+  "evaluation_points": 3,
+  "episodes_per_evaluation": 20,
+  "last_mean_return": 491.03,
+  "last_mean_episode_length": 172.25,
+  "final_model_present": false,
+  "metadata_present": false,
+  "termination_cause": "unknown; the tmux session/process were absent and the log contained only the Gymnasium v4 deprecation warning",
+  "exact_resume_possible": false,
+  "resume_limitation": "Replay-buffer and RNG state were not saved.",
+  "run_log": "../../logs/proposal-hopper-seed3-1793900511919073171.log",
+  "restart_attempt": 2,
+  "restart_target": "../../proposal_hopper/Hopper-seed3"
+}

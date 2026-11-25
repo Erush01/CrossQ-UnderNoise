@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "failures": [],
+  "device_note": "auto will resolve to CPU",
+  "env_id": "HumanoidStandup-v4",
+  "observation_shape": [
+    376
+  ],
+  "action_shape": [
+    17
+  ],
+  "replay_buffer_bytes_estimate": 3084000000,
+  "available_ram_bytes": 11620663296,
+  "available_disk_bytes": 890336194560,
+  "gpu_available": false,
+  "gpu_free_bytes": null,
+  "target_dir": "/home/erush/CMP620/CrossQ/artifacts/pilot/HumanoidStandup-seed0-attempt2"
+}

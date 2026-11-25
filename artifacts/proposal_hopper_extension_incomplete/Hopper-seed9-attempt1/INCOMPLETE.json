@@ -1,0 +1,14 @@
+{
+  "status": "incomplete",
+  "attempt": 1,
+  "seed": 9,
+  "env_id": "Hopper-v4",
+  "target_timesteps": 5000000,
+  "last_recorded_evaluation_timestep": 975000,
+  "last_recorded_mean_return": 1876.6322155500002,
+  "last_recorded_mean_episode_length": 443.1,
+  "resume_state_saved": false,
+  "interruption_cause": "unknown; tmux session and training process were absent, and the timing output file was empty",
+  "original_run_dir": "CrossQ/artifacts/proposal_hopper_extension/Hopper-seed9",
+  "archived_at_utc": "2026-11-16T19:37:25.164231+00:00"
+}

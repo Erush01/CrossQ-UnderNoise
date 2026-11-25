@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "implementation_versions": {
+    "stable_baselines3": "2.9.0",
+    "sb3_contrib": "2.9.0",
+    "gymnasium": "1.4.0",
+    "mujoco": "3.16.0"
+  },
+  "tasks": {"HumanoidStandup": "HumanoidStandup-v4"},
+  "task_provenance": {
+    "HumanoidStandup": "Paper Appendix A.3, Table 2 lists HumanoidStandup-v4."
+  },
+  "seeds": [0],
+  "max_steps": 100000,
+  "max_steps_provenance": "Non-paper pilot cap: 100,000 environment steps, reaching the paper BRN warm-up threshold; not the paper's 5,000,000-step endpoint.",
+  "evaluation": {"frequency": 25000, "episodes": 20, "envs": 5},
+  "evaluation_provenance": "Non-paper modern protocol: SB3-Contrib/RL-Zoo versioned recommendation; paper does not specify evaluation frequency, episode count, or evaluation environment count.",
+  "pilot": {
+    "purpose": "Resource and stability pilot only; not full performance reproduction.",
+    "paper_performance_reproduction": false,
+    "approved_scope": "HumanoidStandup-v4, seed 0, 100000 environment steps only.",
+    "post_pilot_full_benchmark_requires_explicit_consent": true
+  },
+  "settings": {
+    "paper": {
+      "gamma": {"value": 0.99, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "actor_learning_rate": {"value": 0.001, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "critic_learning_rate": {"value": 0.001, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "replay_buffer_size": {"value": 1000000, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "batch_size": {"value": 256, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "activation": {"value": "ReLU", "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "normalization": {"value": "BRN", "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "brn_running_average_momentum": {"value": 0.99, "provenance": "Paper Appendix A.2, Table 1."},
+      "brn_warmup_steps": {"value": 100000, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "critic_architecture": {"value": [2048, 2048], "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "adam_beta1": {"value": 0.5, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "train_freq": {"value": 1, "provenance": "Paper UTD 1; SB3 encoding."},
+      "gradient_steps": {"value": 1, "provenance": "Paper UTD 1; SB3 encoding."},
+      "policy_delay": {"value": 3, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."},
+      "n_critics": {"value": 2, "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1."}
+    },
+    "implementation_choices": {
+      "actor_architecture": {"value": [256, 256], "provenance": "SB3-Contrib 2.9.0 documented default; not specified by the paper."},
+      "entropy_coefficient": {"value": "auto", "provenance": "Modern SB3 default; not specified by the paper."},
+      "learning_starts": {"value": 100, "provenance": "Modern SB3 default; not specified by the paper."}
+    },
+    "sb3_mappings": {
+      "constructor_kwargs": {
+        "learning_rate": {"value": 0.001, "provenance": "Actor and critic paper rates are both 0.001."},
+        "buffer_size": {"value": 1000000, "provenance": "Paper replay buffer capacity."},
+        "learning_starts": {"value": 100, "provenance": "Modern SB3 default."},
+        "batch_size": {"value": 256, "provenance": "Paper Appendix A.2, Table 1."},
+        "gamma": {"value": 0.99, "provenance": "Paper Appendix A.2, Table 1."},
+        "train_freq": {"value": 1, "provenance": "Paper UTD 1."},
+        "gradient_steps": {"value": 1, "provenance": "Paper UTD 1."},
+        "ent_coef": {"value": "auto", "provenance": "Modern SB3 default."},
+        "policy_delay": {"value": 3, "provenance": "Paper Appendix A.2, Table 1."}
+      },
+      "policy_kwargs": {
+        "net_arch": {"value": {"pi": [256, 256], "qf": [2048, 2048]}, "provenance": "Paper critic architecture; SB3 default actor architecture."},
+        "activation_fn": {"value": "torch.nn.ReLU", "provenance": "Paper ReLU activation."},
+        "batch_norm": {"value": true, "provenance": "Enables paper BRN."},
+        "batch_norm_momentum": {"value": 0.01, "provenance": "PyTorch update momentum corresponding to paper running-average momentum 0.99."},
+        "renorm_warmup_steps": {"value": 100000, "provenance": "Paper BRN warm-up threshold."},
+        "n_critics": {"value": 2, "provenance": "Paper Appendix A.2, Table 1."},
+        "optimizer_kwargs": {"value": {"betas": [0.5, 0.999]}, "provenance": "Paper beta1 and SB3-Contrib source beta2 default."}
+      },
+      "target_network_behavior": "CrossQ uses tau=1.0 internally; no target networks, as in the paper."
+    }
+  }
+}

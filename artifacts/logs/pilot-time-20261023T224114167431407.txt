@@ -1,0 +1,23 @@
+	Command being timed: "/home/erush/CMP620/ARS/.venv/bin/python -c import sys; from pathlib import Path; sys.path.insert(0, sys.argv[1]); from crossq_repro.runner import run; run(sys.argv[2], "HumanoidStandup-v4", 0, 100000, sys.argv[3], device="auto", provenance_paths=sys.argv[4:]) /home/erush/CMP620/CrossQ /home/erush/CMP620/CrossQ/configs/pilot_humanoidstandup_100k.json /home/erush/CMP620/CrossQ/artifacts/pilot/HumanoidStandup-seed0-attempt2 CrossQ/scripts/run_pilot.sh /home/erush/CMP620/CrossQ/scripts/preflight_pilot.py"
+	User time (seconds): 1338.76
+	System time (seconds): 202.48
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 25:48.82
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2437420
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 1619
+	Minor (reclaiming a frame) page faults: 408885
+	Voluntary context switches: 368661
+	Involuntary context switches: 19804
+	Swaps: 0
+	File system inputs: 355840
+	File system outputs: 1197328
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

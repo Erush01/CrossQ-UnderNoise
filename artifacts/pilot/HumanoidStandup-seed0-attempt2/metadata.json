@@ -1,0 +1,274 @@
+{
+  "actual_timesteps": 100000,
+  "config_sha256": "998d2f38a4f78606fdb0682543f32d95c94148821881ebc02e87389b111cc99f",
+  "env_id": "HumanoidStandup-v4",
+  "finished_at": "2026-10-23T23:07:03.740319+00:00",
+  "package_versions": {
+    "gymnasium": "1.4.0",
+    "mujoco": "3.16.0",
+    "numpy": "2.5.4",
+    "sb3-contrib": "2.9.0",
+    "stable-baselines3": "2.9.0",
+    "torch": "2.14.1"
+  },
+  "resolved_config": {
+    "config": {
+      "evaluation": {
+        "envs": 5,
+        "episodes": 20,
+        "frequency": 25000
+      },
+      "evaluation_provenance": "Non-paper modern protocol: SB3-Contrib/RL-Zoo versioned recommendation; paper does not specify evaluation frequency, episode count, or evaluation environment count.",
+      "implementation_versions": {
+        "gymnasium": "1.4.0",
+        "mujoco": "3.16.0",
+        "sb3_contrib": "2.9.0",
+        "stable_baselines3": "2.9.0"
+      },
+      "max_steps": 100000,
+      "max_steps_provenance": "Non-paper pilot cap: 100,000 environment steps, reaching the paper BRN warm-up threshold; not the paper's 5,000,000-step endpoint.",
+      "pilot": {
+        "approved_scope": "HumanoidStandup-v4, seed 0, 100000 environment steps only.",
+        "paper_performance_reproduction": false,
+        "post_pilot_full_benchmark_requires_explicit_consent": true,
+        "purpose": "Resource and stability pilot only; not full performance reproduction."
+      },
+      "schema_version": 1,
+      "seeds": [
+        0
+      ],
+      "settings": {
+        "implementation_choices": {
+          "actor_architecture": {
+            "provenance": "SB3-Contrib 2.9.0 documented default; not specified by the paper.",
+            "value": [
+              256,
+              256
+            ]
+          },
+          "entropy_coefficient": {
+            "provenance": "Modern SB3 default; not specified by the paper.",
+            "value": "auto"
+          },
+          "learning_starts": {
+            "provenance": "Modern SB3 default; not specified by the paper.",
+            "value": 100
+          }
+        },
+        "paper": {
+          "activation": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": "ReLU"
+          },
+          "actor_learning_rate": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.001
+          },
+          "adam_beta1": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.5
+          },
+          "batch_size": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 256
+          },
+          "brn_running_average_momentum": {
+            "provenance": "Paper Appendix A.2, Table 1.",
+            "value": 0.99
+          },
+          "brn_warmup_steps": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 100000
+          },
+          "critic_architecture": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": [
+              2048,
+              2048
+            ]
+          },
+          "critic_learning_rate": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.001
+          },
+          "gamma": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.99
+          },
+          "gradient_steps": {
+            "provenance": "Paper UTD 1; SB3 encoding.",
+            "value": 1
+          },
+          "n_critics": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 2
+          },
+          "normalization": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": "BRN"
+          },
+          "policy_delay": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 3
+          },
+          "replay_buffer_size": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 1000000
+          },
+          "train_freq": {
+            "provenance": "Paper UTD 1; SB3 encoding.",
+            "value": 1
+          }
+        },
+        "sb3_mappings": {
+          "constructor_kwargs": {
+            "batch_size": {
+              "provenance": "Paper Appendix A.2, Table 1.",
+              "value": 256
+            },
+            "buffer_size": {
+              "provenance": "Paper replay buffer capacity.",
+              "value": 1000000
+            },
+            "ent_coef": {
+              "provenance": "Modern SB3 default.",
+              "value": "auto"
+            },
+            "gamma": {
+              "provenance": "Paper Appendix A.2, Table 1.",
+              "value": 0.99
+            },
+            "gradient_steps": {
+              "provenance": "Paper UTD 1.",
+              "value": 1
+            },
+            "learning_rate": {
+              "provenance": "Actor and critic paper rates are both 0.001.",
+              "value": 0.001
+            },
+            "learning_starts": {
+              "provenance": "Modern SB3 default.",
+              "value": 100
+            },
+            "policy_delay": {
+              "provenance": "Paper Appendix A.2, Table 1.",
+              "value": 3
+            },
+            "train_freq": {
+              "provenance": "Paper UTD 1.",
+              "value": 1
+            }
+          },
+          "policy_kwargs": {
+            "activation_fn": {
+              "provenance": "Paper ReLU activation.",
+              "value": "torch.nn.ReLU"
+            },
+            "batch_norm": {
+              "provenance": "Enables paper BRN.",
+              "value": true
+            },
+            "batch_norm_momentum": {
+              "provenance": "PyTorch update momentum corresponding to paper running-average momentum 0.99.",
+              "value": 0.01
+            },
+            "n_critics": {
+              "provenance": "Paper Appendix A.2, Table 1.",
+              "value": 2
+            },
+            "net_arch": {
+              "provenance": "Paper critic architecture; SB3 default actor architecture.",
+              "value": {
+                "pi": [
+                  256,
+                  256
+                ],
+                "qf": [
+                  2048,
+                  2048
+                ]
+              }
+            },
+            "optimizer_kwargs": {
+              "provenance": "Paper beta1 and SB3-Contrib source beta2 default.",
+              "value": {
+                "betas": [
+                  0.5,
+                  0.999
+                ]
+              }
+            },
+            "renorm_warmup_steps": {
+              "provenance": "Paper BRN warm-up threshold.",
+              "value": 100000
+            }
+          },
+          "target_network_behavior": "CrossQ uses tau=1.0 internally; no target networks, as in the paper."
+        }
+      },
+      "task_provenance": {
+        "HumanoidStandup": "Paper Appendix A.3, Table 2 lists HumanoidStandup-v4."
+      },
+      "tasks": {
+        "HumanoidStandup": "HumanoidStandup-v4"
+      }
+    },
+    "constructor_kwargs": {
+      "batch_size": 256,
+      "buffer_size": 1000000,
+      "ent_coef": "auto",
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.001,
+      "learning_starts": 100,
+      "policy_delay": 3,
+      "train_freq": 1
+    },
+    "device": {
+      "requested": "auto",
+      "resolved": "cuda"
+    },
+    "evaluation": {
+      "envs": 5,
+      "episodes": 20,
+      "frequency": 25000
+    },
+    "evaluation_seed": 10000,
+    "policy_kwargs": {
+      "activation_fn": "torch.nn.modules.activation.ReLU",
+      "batch_norm": true,
+      "batch_norm_momentum": 0.01,
+      "n_critics": 2,
+      "net_arch": {
+        "pi": [
+          256,
+          256
+        ],
+        "qf": [
+          2048,
+          2048
+        ]
+      },
+      "optimizer_kwargs": {
+        "betas": [
+          0.5,
+          0.999
+        ]
+      },
+      "renorm_warmup_steps": 100000,
+      "use_sde": false
+    }
+  },
+  "seed": 0,
+  "source_sha256": {
+    "/home/erush/CMP620/CrossQ/crossq_repro/artifacts.py": "a3797a4a83b6228c54eaa280f416da6210bc16a5ed8bd29ebee5a509f6197ca2",
+    "/home/erush/CMP620/CrossQ/crossq_repro/evaluate.py": "9680ffdb97c550e144bffc9cf393ab8987c4584b5f6dc4a207a20a81065eec0f",
+    "/home/erush/CMP620/CrossQ/crossq_repro/runner.py": "48e63110c0d40f70f8ae811d11a6df895c9f159d8692ee5513089ac67a950fcf",
+    "/home/erush/CMP620/CrossQ/scripts/check_envs.py": "550deef3d8382d29fea44022bac6d0d3645054622cf009daf62e634d47a9f13e",
+    "/home/erush/CMP620/CrossQ/scripts/preflight_pilot.py": "30c24f3272d9de7cd1580f5e7acf37c9dd26cdabc11bb5f3e2aeac1c3f0b37bb",
+    "CrossQ/scripts/run_pilot.sh": "33b06a6398f2109a89cd980c71fda9d351d55f8d65a2da93a256bffb732b16c3"
+  },
+  "started_at": "2026-10-23T22:41:16.612542+00:00",
+  "status": "completed",
+  "total_timesteps": 100000
+}

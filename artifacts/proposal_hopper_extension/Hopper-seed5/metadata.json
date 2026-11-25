@@ -1,0 +1,282 @@
+{
+  "actual_timesteps": 5000000,
+  "config_sha256": "f30f799014d47e58febc45bcc457be64b8c12e9f5cbcc195c3c5e9267a692eb8",
+  "env_id": "Hopper-v4",
+  "finished_at": "2026-11-11T12:35:49.760427+00:00",
+  "package_versions": {
+    "gymnasium": "1.4.0",
+    "mujoco": "3.16.0",
+    "numpy": "2.5.4",
+    "sb3-contrib": "2.9.0",
+    "stable-baselines3": "2.9.0",
+    "torch": "2.14.1"
+  },
+  "resolved_config": {
+    "config": {
+      "evaluation": {
+        "envs": 5,
+        "episodes": 20,
+        "frequency": 25000
+      },
+      "evaluation_provenance": "Non-paper modern protocol: SB3-Contrib/RL-Zoo versioned recommendation; paper does not specify evaluation frequency, episode count, or evaluation environment count.",
+      "implementation_versions": {
+        "gymnasium": "1.4.0",
+        "mujoco": "3.16.0",
+        "sb3_contrib": "2.9.0",
+        "stable_baselines3": "2.9.0"
+      },
+      "max_steps": 5000000,
+      "max_steps_provenance": "5,000,000 training-step endpoint shown in paper Figure 5, Figure 6, and described in Appendix A.3.",
+      "schema_version": 1,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "settings": {
+        "implementation_choices": {
+          "actor_architecture": {
+            "provenance": "Not specified by the paper; SB3-Contrib 2.9.0 documented default actor architecture.",
+            "value": [
+              256,
+              256
+            ]
+          },
+          "entropy_coefficient": {
+            "provenance": "Modern SB3 default; not specified by the paper.",
+            "value": "auto"
+          },
+          "learning_starts": {
+            "provenance": "Modern SB3 default; not specified by the paper.",
+            "value": 100
+          }
+        },
+        "paper": {
+          "activation": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": "ReLU"
+          },
+          "actor_learning_rate": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.001
+          },
+          "adam_beta1": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.5
+          },
+          "batch_size": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 256
+          },
+          "brn_running_average_momentum": {
+            "provenance": "Paper Appendix A.2, Table 1 specifies BRN running-average momentum 0.99; the distinct SB3 batch_norm_momentum encoding is recorded under sb3_mappings.",
+            "value": 0.99
+          },
+          "brn_warmup_steps": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 100000
+          },
+          "critic_architecture": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": [
+              2048,
+              2048
+            ]
+          },
+          "critic_learning_rate": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.001
+          },
+          "gamma": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 0.99
+          },
+          "gradient_steps": {
+            "provenance": "UTD 1 from official CrossQ ICLR 2024 paper, Appendix A.2, Table 1; SB3 encoding.",
+            "value": 1
+          },
+          "n_critics": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 2
+          },
+          "normalization": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": "BRN"
+          },
+          "policy_delay": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 3
+          },
+          "replay_buffer_size": {
+            "provenance": "Official CrossQ ICLR 2024 paper, Appendix A.2, Table 1.",
+            "value": 1000000
+          },
+          "train_freq": {
+            "provenance": "UTD 1 from official CrossQ ICLR 2024 paper, Appendix A.2, Table 1; SB3 encoding.",
+            "value": 1
+          }
+        },
+        "sb3_mappings": {
+          "constructor_kwargs": {
+            "batch_size": {
+              "provenance": "CrossQ.__init__ constructor argument corresponding to paper Appendix A.2, Table 1.",
+              "value": 256
+            },
+            "buffer_size": {
+              "provenance": "CrossQ.__init__ constructor argument corresponding to paper replay_buffer_size, Appendix A.2, Table 1.",
+              "value": 1000000
+            },
+            "ent_coef": {
+              "provenance": "CrossQ.__init__ SB3-Contrib 2.9.0 default; modern SB3 default, not paper-specified.",
+              "value": "auto"
+            },
+            "gamma": {
+              "provenance": "CrossQ.__init__ constructor argument corresponding to paper Appendix A.2, Table 1.",
+              "value": 0.99
+            },
+            "gradient_steps": {
+              "provenance": "CrossQ.__init__ constructor argument; paired with train_freq=1 to implement paper UTD 1.",
+              "value": 1
+            },
+            "learning_rate": {
+              "provenance": "CrossQ.__init__ in installed SB3-Contrib 2.9.0 exposes one learning_rate for actor and critic optimizers; paper actor/critic rates are both 0.001.",
+              "value": 0.001
+            },
+            "learning_starts": {
+              "provenance": "CrossQ.__init__ SB3-Contrib 2.9.0 default; modern SB3 default, not paper-specified.",
+              "value": 100
+            },
+            "policy_delay": {
+              "provenance": "Explicit CrossQ.__init__ constructor kwarg, documented in installed SB3-Contrib 2.9.0 source; paper Appendix A.2, Table 1.",
+              "value": 3
+            },
+            "train_freq": {
+              "provenance": "CrossQ.__init__ constructor argument; paired with gradient_steps=1 to implement paper UTD 1.",
+              "value": 1
+            }
+          },
+          "policy_kwargs": {
+            "activation_fn": {
+              "provenance": "CrossQPolicy policy kwarg corresponding to paper ReLU activation, Appendix A.2, Table 1.",
+              "value": "torch.nn.ReLU"
+            },
+            "batch_norm": {
+              "provenance": "CrossQPolicy policy kwarg enables BRN as required by paper Appendix A.2, Table 1.",
+              "value": true
+            },
+            "batch_norm_momentum": {
+              "provenance": "CrossQPolicy policy kwarg in installed SB3-Contrib 2.9.0; its PyTorch update momentum is 1 - paper running-average momentum 0.99.",
+              "value": 0.01
+            },
+            "n_critics": {
+              "provenance": "CrossQPolicy policy kwarg corresponding to paper Appendix A.2, Table 1.",
+              "value": 2
+            },
+            "net_arch": {
+              "provenance": "CrossQPolicy policy kwarg; pi is SB3 documented [256,256] default not reported in paper, qf [2048,2048] from paper Appendix A.2, Table 1.",
+              "value": {
+                "pi": [
+                  256,
+                  256
+                ],
+                "qf": [
+                  2048,
+                  2048
+                ]
+              }
+            },
+            "optimizer_kwargs": {
+              "provenance": "CrossQPolicy policy kwarg; Adam beta1=0.5 from paper Appendix A.2, Table 1, beta2=0.999 follows SB3-Contrib 2.9.0 source default.",
+              "value": {
+                "betas": [
+                  0.5,
+                  0.999
+                ]
+              }
+            },
+            "renorm_warmup_steps": {
+              "provenance": "CrossQPolicy policy kwarg corresponding to paper BRN warm-up 100,000, Appendix A.2, Table 1.",
+              "value": 100000
+            }
+          },
+          "target_network_behavior": "CrossQ.__init__ in installed SB3-Contrib 2.9.0 passes tau=1.0 internally to its parent and does not expose tau as a caller kwarg; this implements the paper's no-target-networks setting."
+        }
+      },
+      "task_provenance": {
+        "Hopper": "Paper Appendix A.3, Table 2 lists Hopper-v4."
+      },
+      "tasks": {
+        "Hopper": "Hopper-v4"
+      }
+    },
+    "constructor_kwargs": {
+      "batch_size": 256,
+      "buffer_size": 1000000,
+      "ent_coef": "auto",
+      "gamma": 0.99,
+      "gradient_steps": 1,
+      "learning_rate": 0.001,
+      "learning_starts": 100,
+      "policy_delay": 3,
+      "train_freq": 1
+    },
+    "device": {
+      "requested": "auto",
+      "resolved": "cuda"
+    },
+    "evaluation": {
+      "envs": 5,
+      "episodes": 20,
+      "frequency": 25000
+    },
+    "evaluation_seed": 10005,
+    "policy_kwargs": {
+      "activation_fn": "torch.nn.modules.activation.ReLU",
+      "batch_norm": true,
+      "batch_norm_momentum": 0.01,
+      "n_critics": 2,
+      "net_arch": {
+        "pi": [
+          256,
+          256
+        ],
+        "qf": [
+          2048,
+          2048
+        ]
+      },
+      "optimizer_kwargs": {
+        "betas": [
+          0.5,
+          0.999
+        ]
+      },
+      "renorm_warmup_steps": 100000,
+      "use_sde": false
+    }
+  },
+  "seed": 5,
+  "source_sha256": {
+    "/home/erush/CMP620/CrossQ/configs/proposal_hopper_10seeds_5m_extension.yaml": "4bf3affb7454b6f5f96329cde6e66cd33f6d1df0bddaacab39ab47bce2a964e1",
+    "/home/erush/CMP620/CrossQ/configs/proposal_hopper_5seeds_5m.yaml": "efd1444b87fda2ad175eb9c8c3d4250af0f74a1dabe5654bfc5c48b75053f3af",
+    "/home/erush/CMP620/CrossQ/crossq_repro/artifacts.py": "a3797a4a83b6228c54eaa280f416da6210bc16a5ed8bd29ebee5a509f6197ca2",
+    "/home/erush/CMP620/CrossQ/crossq_repro/evaluate.py": "9680ffdb97c550e144bffc9cf393ab8987c4584b5f6dc4a207a20a81065eec0f",
+    "/home/erush/CMP620/CrossQ/crossq_repro/runner.py": "48e63110c0d40f70f8ae811d11a6df895c9f159d8692ee5513089ac67a950fcf",
+    "/home/erush/CMP620/CrossQ/scripts/check_envs.py": "550deef3d8382d29fea44022bac6d0d3645054622cf009daf62e634d47a9f13e",
+    "/home/erush/CMP620/CrossQ/scripts/run_proposal_hopper.py": "4e8746db3ead755088d53d507a20c3cf33a318d59b280bf3305a61797d896840",
+    "/home/erush/CMP620/CrossQ/scripts/run_proposal_hopper_extension.py": "2b531723805678135901bd0710abff2833886100c0bdfe77bfe5e4fae0c51be2",
+    "/home/erush/CMP620/CrossQ/scripts/scaled_reproduction_jobs.py": "f57b95feb0c874d266e70eda7829a406c92a4f6cc02651ebd84fe151fa95b108",
+    "/home/erush/CMP620/CrossQ/scripts/validate_proposal_hopper.py": "01fbf7cbadcd97a3d2ff8627635d91ccfecea6b3d06e4d95c38b4a3ba24e94fc",
+    "/home/erush/CMP620/CrossQ/scripts/validate_proposal_hopper_extension.py": "3624e0f50f25033b6127c49d8a7a86e85a884c2bc7e8d20f109f9119f3bc971c"
+  },
+  "started_at": "2026-11-10T19:36:24.313649+00:00",
+  "status": "completed",
+  "total_timesteps": 5000000
+}

@@ -1,0 +1,80 @@
+ENGINEERING SMOKE ONLY: Hopper (Hopper-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/Hopper-seed0
+ENGINEERING SMOKE ONLY: Walker2d (Walker2d-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/Walker2d-seed0
+ENGINEERING SMOKE ONLY: Ant (Ant-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/Ant-seed0
+ENGINEERING SMOKE ONLY: Humanoid (Humanoid-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/Humanoid-seed0
+ENGINEERING SMOKE ONLY: HalfCheetah (HalfCheetah-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/HalfCheetah-seed0
+ENGINEERING SMOKE ONLY: HumanoidStandup (HumanoidStandup-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> CrossQ/runs/engineering-smoke-metadata-fix/HumanoidStandup-seed0
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=83.94 +/- 0.00
+Episode length: 56.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=1031.65 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Walker2d-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=-23.53 +/- 0.00
+Episode length: 75.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=241.41 +/- 0.00
+Episode length: 130.00 +/- 0.00
+New best mean reward!
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Ant-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=573.27 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=223.98 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Humanoid-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=221.92 +/- 0.00
+Episode length: 44.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=260.50 +/- 0.00
+Episode length: 58.00 +/- 0.00
+New best mean reward!
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=-11.72 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=-25.30 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HumanoidStandup-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Eval num_timesteps=500, episode_reward=27380.34 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=45184.81 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!

@@ -1,0 +1,45 @@
+ENGINEERING SMOKE ONLY: Hopper (Hopper-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/Hopper-seed0
+ENGINEERING SMOKE ONLY: Walker2d (Walker2d-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/Walker2d-seed0
+ENGINEERING SMOKE ONLY: Ant (Ant-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/Ant-seed0
+ENGINEERING SMOKE ONLY: Humanoid (Humanoid-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/Humanoid-seed0
+ENGINEERING SMOKE ONLY: HalfCheetah (HalfCheetah-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/HalfCheetah-seed0
+ENGINEERING SMOKE ONLY: HumanoidStandup (HumanoidStandup-v4), seed=0, steps=1000, eval=1 env x 1 episode every 500 steps -> /home/erush/CMP620/CrossQ/runs/engineering-smoke/HumanoidStandup-seed0
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/stable_baselines3/common/evaluation.py:71: UserWarning: Evaluation environment is not wrapped with a ``Monitor`` wrapper. This may result in reporting modified episode lengths and rewards, if other wrappers happen to modify these. Consider wrapping environment first with ``Monitor`` wrapper.
+  warnings.warn(
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/home/erush/CMP620/CrossQ/crossq_repro/runner.py", line 141, in run
+    write_json(run_dir / "metadata.json", metadata)
+  File "/home/erush/CMP620/CrossQ/crossq_repro/artifacts.py", line 43, in write_json
+    Path(path).write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/usr/lib/python3.12/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/usr/lib/python3.12/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type type is not JSON serializable
+Eval num_timesteps=500, episode_reward=83.94 +/- 0.00
+Episode length: 56.00 +/- 0.00
+New best mean reward!
+Eval num_timesteps=1000, episode_reward=1031.65 +/- 0.00
+Episode length: 1000.00 +/- 0.00
+New best mean reward!

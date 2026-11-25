@@ -1,0 +1,20 @@
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HumanoidStandup-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+{
+  "ok": true,
+  "failures": [],
+  "device_note": "auto will resolve to CUDA",
+  "env_id": "HumanoidStandup-v4",
+  "observation_shape": [
+    376
+  ],
+  "action_shape": [
+    17
+  ],
+  "replay_buffer_bytes_estimate": 3084000000,
+  "available_ram_bytes": 11721175040,
+  "available_disk_bytes": 889901182976,
+  "gpu_available": true,
+  "gpu_free_bytes": 11552161792,
+  "target_dir": "/home/erush/CMP620/CrossQ/artifacts/pilot/HumanoidStandup-seed0-attempt2"
+}

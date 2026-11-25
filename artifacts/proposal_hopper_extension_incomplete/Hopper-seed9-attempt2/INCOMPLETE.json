@@ -1,0 +1,17 @@
+{
+  "status": "incomplete",
+  "attempt": 2,
+  "seed": 9,
+  "env_id": "Hopper-v4",
+  "target_timesteps": 5000000,
+  "last_recorded_evaluation_timestep": 4175000,
+  "last_recorded_mean_return": 2013.74639165,
+  "last_recorded_episode_sd": 82.31877535208072,
+  "last_recorded_mean_episode_length": 457.1,
+  "resume_state_saved": false,
+  "interruption_cause": "unknown; tmux session and training process were absent; final_model.zip and metadata.json were missing; the timing output file was empty",
+  "original_run_dir": "CrossQ/artifacts/proposal_hopper_extension/Hopper-seed9",
+  "run_log": "CrossQ/artifacts/logs/proposal-hopper-extension-seed9-1794857886247360719.log",
+  "timing_log": "CrossQ/artifacts/logs/proposal-hopper-extension-seed9-1794857886247360719-time.txt",
+  "archived_at_utc": "2026-11-25T17:16:33.238968+00:00"
+}

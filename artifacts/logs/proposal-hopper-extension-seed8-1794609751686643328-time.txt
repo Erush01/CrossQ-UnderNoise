@@ -1,0 +1,23 @@
+	Command being timed: "/home/erush/CMP620/ARS/.venv/bin/python -c import sys; from crossq_repro.runner import run; run(sys.argv[1], 'Hopper-v4', int(sys.argv[2]), 5000000, sys.argv[3], device='auto', provenance_paths=sys.argv[4:]) /home/erush/CMP620/CrossQ/configs/proposal_hopper_10seeds_5m_extension.yaml 8 /home/erush/CMP620/CrossQ/artifacts/proposal_hopper_extension/Hopper-seed8 /home/erush/CMP620/CrossQ/scripts/run_proposal_hopper_extension.py /home/erush/CMP620/CrossQ/scripts/validate_proposal_hopper_extension.py /home/erush/CMP620/CrossQ/configs/proposal_hopper_10seeds_5m_extension.yaml /home/erush/CMP620/CrossQ/configs/proposal_hopper_5seeds_5m.yaml /home/erush/CMP620/CrossQ/scripts/run_proposal_hopper.py /home/erush/CMP620/CrossQ/scripts/validate_proposal_hopper.py /home/erush/CMP620/CrossQ/scripts/scaled_reproduction_jobs.py"
+	User time (seconds): 72984.71
+	System time (seconds): 11074.30
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 23:26:53
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2035948
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 3034
+	Minor (reclaiming a frame) page faults: 476721
+	Voluntary context switches: 18467216
+	Involuntary context switches: 851003
+	Swaps: 0
+	File system inputs: 921304
+	File system outputs: 4426928
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

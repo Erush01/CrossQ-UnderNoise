@@ -1,0 +1,32 @@
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HumanoidStandup-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Resource preflight passed: max_replay_bytes=3084000000 available_ram=10430930944 required_disk=21474836480 available_disk=889589276672 cuda_free=11552161792
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment Hopper-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HalfCheetah-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+WARNING: compiler attribute 'settotalmass' is deprecated and will be removed in a future release: scale the masses and densities in the model, or call mj_setTotalmass and mj_setConst on the compiled model
+
+/home/erush/CMP620/ARS/.venv/lib/python3.12/site-packages/gymnasium/envs/registration.py:511: DeprecationWarning: [33mWARN: The environment HumanoidStandup-v4 is out of date. You should consider upgrading to version `v5`.[0m
+  logger.deprecation(
+Checking Hopper (Hopper-v4)
+PASS Hopper-v4: reset, step, Box action space, CrossQ construction
+Checking HalfCheetah (HalfCheetah-v4)
+PASS HalfCheetah-v4: reset, step, Box action space, CrossQ construction
+Checking HumanoidStandup (HumanoidStandup-v4)
+PASS HumanoidStandup-v4: reset, step, Box action space, CrossQ construction
+Traceback (most recent call last):
+  File "/home/erush/CMP620/CrossQ/scripts/scaled_reproduction_jobs.py", line 264, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/home/erush/CMP620/CrossQ/scripts/scaled_reproduction_jobs.py", line 259, in main
+    run_batch(args.run_batch, args.config, args.output_root, confirmed=args.confirm_scaled_run)
+  File "/home/erush/CMP620/CrossQ/scripts/scaled_reproduction_jobs.py", line 198, in run_batch
+    raise RuntimeError(f"scaled run failed for {job['task']} seed {job['seed']}; see {run_log}")
+RuntimeError: scaled run failed for Hopper seed 0; see /home/erush/CMP620/CrossQ/artifacts/logs/scaled-Hopper-seed0-1792858368322625228.log

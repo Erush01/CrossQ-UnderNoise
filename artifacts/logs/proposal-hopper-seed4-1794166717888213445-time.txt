@@ -1,0 +1,23 @@
+	Command being timed: "/home/erush/CMP620/ARS/.venv/bin/python -c import sys; from crossq_repro.runner import run; run(sys.argv[1], 'Hopper-v4', int(sys.argv[2]), 5000000, sys.argv[3], device='auto', provenance_paths=sys.argv[4:]) /home/erush/CMP620/CrossQ/configs/proposal_hopper_5seeds_5m.yaml 4 /home/erush/CMP620/CrossQ/artifacts/proposal_hopper/Hopper-seed4 /home/erush/CMP620/CrossQ/scripts/run_proposal_hopper.py /home/erush/CMP620/CrossQ/scripts/validate_proposal_hopper.py"
+	User time (seconds): 53286.31
+	System time (seconds): 9555.73
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 17:31:39
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 2034484
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2862
+	Minor (reclaiming a frame) page faults: 414494
+	Voluntary context switches: 17980057
+	Involuntary context switches: 436142
+	Swaps: 0
+	File system inputs: 575648
+	File system outputs: 1017000
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

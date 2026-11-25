@@ -1,0 +1,6 @@
+{
+  "ok": false,
+  "failures": [
+    "Environment/resource preflight failed: No module named 'gymnasium'"
+  ]
+}

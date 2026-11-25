@@ -1,0 +1,22 @@
+{
+  "status": "incomplete",
+  "task": "Hopper-v4",
+  "seed": 3,
+  "attempt": 2,
+  "last_completed_timestep": 1675000,
+  "evaluation_points": 67,
+  "episodes_per_evaluation": 20,
+  "last_mean_return": 1896.03,
+  "last_return_sd": 87.59,
+  "last_mean_episode_length": 447.60,
+  "final_model_present": false,
+  "metadata_present": false,
+  "termination_cause": "likely interrupted by a host/WSL reboot; previous boot ended at 2026-11-06 04:42:08 +03 after the last evaluation file update at 04:37:33, and the current boot started at 05:19:08; exact cause unknown",
+  "kernel_oom_record_found": false,
+  "exact_resume_possible": false,
+  "resume_limitation": "Replay-buffer and RNG state were not saved.",
+  "run_log": "../../logs/proposal-hopper-seed3-1793907955335870750.log",
+  "time_log": "../../logs/proposal-hopper-seed3-1793907955335870750-time.txt",
+  "restart_attempt": 3,
+  "restart_target": "../../proposal_hopper/Hopper-seed3"
+}

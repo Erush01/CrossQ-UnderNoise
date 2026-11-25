@@ -1,0 +1,17 @@
+{
+  "task": "HalfCheetah-v4",
+  "training_seed": 0,
+  "checkpoint": "CrossQ/artifacts/scaled_reproduction_retry/HalfCheetah-seed0/best/best_model.zip",
+  "checkpoint_best_evaluation_step": 2475000,
+  "visualization_seed": 97531,
+  "deterministic_policy": true,
+  "camera_follow": true,
+  "camera_azimuth": 90,
+  "camera_elevation": -15,
+  "frames": 241,
+  "fps": 20,
+  "trajectory_return_so_far": 2920.9257885251604,
+  "terminated": false,
+  "truncated": false,
+  "video": "CrossQ/artifacts/visualizations/halfcheetah-seed0-best-2475000-simulation.mp4"
+}
